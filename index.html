@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div id="contactinfo">
+            <div class="d-flex flex-column gap-2 fw-semibold align-items-center">
+                <p><img src="./assets/images/email.png" height="15rem"/> singh.jasmeet094@gmail.com</p>
+                <p><img src="./assets/images/call.png" height="15rem"/>+1 647-913-7830</p>
+            </div>
+            
+            <button id="closeContactInfoButton" onclick="closeContactInfo()">Close</button>
+        </div>
+        <div id="overlay" onclick="closeContactInfo()"></div>
+
+        <div class="section1 " id="section1">   
+            <div id="menu">   
+                    <div class="p-2 menuoptions" onclick="scrollToSection('project')">Projects</div>
+                    <div class="p-2 menuoptions" onclick="openContactInfo()">Contact</div>
+            </div>       
+            <!-- introduction -->
+            <div class="introduction">
+                <div class="mx-5">
+                    <p>
+                        Hello there! I'm <br><span id="name">Jasmeet Singh</span><br>
+                        a Web Developer with a keen eye for creating<br> responsive, interactive, user-friendly, and visually appealing websites
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero">
+                <div class="d-flex  gap-2 align-self-end">
+                    <div><p class="headings" onclick="scrollToSection('project')"> Projects </p></div>
+                    <div><p class="headings" onclick="openContactInfo()"> Contact </p></div>
+                </div>
+                <div>
+                    <img  id="coder-image" src="./assets/images/coder.png" alt="a programmer's image" />
+                </div>
+
+                <div class="skillset">
+                    <p class="text-center mb-3" id="expertise">Expertise in</p>
+                    <div id="skills">
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="logos" src="./assets/images/logos/react.png" alt="react logo" />
+                            <p>React</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="logos" src="./assets/images/logos/css.png" alt="CSS logo" />
+                            <p>CSS</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="logos" src="./assets/images/logos/JS.png" alt="javascript logo" />
+                            <p>Javascript</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="logos" src="./assets/images/logos/html.png" alt="HTML logo" />
+                            <p>HTML</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="logos" src="./assets/images/logos/git.png" alt="git logo" />
+                            <p>Git/Github</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="logos" src="./assets/images/logos/nodejs.png" alt="Node JS logo" />
+                            <p>NodeJS</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="logos" src="./assets/images/logos/tailwind.png" alt="Tailwind logo" />
+                            <p>Tailwind</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="logos" src="./assets/images/logos/mongodb.png" alt="Mongo DB logo" />
+                            <p>MongoDB</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="logos" src="./assets/images/logos/pgsql.png" alt="PostgreSQL logo" />
+                            <p>PostgreSQL</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img class="logos" src="./assets/images/logos/express.png" alt="Express JS logo" />
+                            <p>ExpressJS</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="banner">
+            <h3>Have a look at the projects below that I have successfully completed,<br> and more are in the process of making.</h3>
+        </div>
+
+        <div id="project" class=" d-flex flex-column">
+            
+            <div class="projects position-relative" id="project1">
+                <div class="text-center position-absolute top-0 w-100 pt-2">
+                    <h3>Ecommerce Online Store</h3>
+                </div>
+                <div class="project-description">
+                    
+                    <p>
+                        The application is built with <br>HTML, CSS, JavaScript, React, APIs<br>and serves all the basic functions like:
+                    </p>
+                    <ul>
+                        <li>Catalog of products with descriptions, prices, and images</li>
+                        <li>All data is fetched through API call</li>
+                        <li>Allows users to add and remove products to their shopping cart</li>
+                        <li>Provide a dynamic and responsive cart that updates in real-time</li>
+                        <li>Responsive and mobile-friendly design for a consistent experience across devices</li>                            
+                        <li>Search functionality for quick product discovery</li>
+                    </ul>
+                    
+                </div>
+                
+                <!-- Project images
+                        <div class="slides"><img class="project-images" src="./images/project-images/calculator/img1.png" alt="Image 1"></div>
+                        <div class="slides"><img class="project-images" src="./images/project-images/calculator/img2.png" alt="Image 2"></div>
+                -->
+                <div class="position-relative">
+                    
+                    <div class="slider-container">
+                        <div id="slider1">
+                            <div class="slides"><img class="project-images" src="./assets/images/project-images/ecomStore/fs1.png" alt="Image 1"></div>
+                            <div class="slides"><img class="project-images" src="./assets/images/project-images/ecomStore/fs2.png" alt="Image 2"></div>
+                            <div class="slides"><img class="project-images" src="./assets/images/project-images/ecomStore/fs3.png" alt="Image 3"></div>
+                            <div class="slides"><img class="project-images" src="./assets/images/project-images/ecomStore/fs4.png" alt="Image 4"></div>
+                            <div class="slides"><img class="project-images" src="./assets/images/project-images/ecomStore/res1.png" alt="Image 5"></div>
+                            <div class="slides"><img class="project-images" src="./assets/images/project-images/ecomStore/res2.png" alt="Image 6"></div>
+                        </div>       
+                    </div>
+                    <button class="position-absolute top-50 start-0 border-0 bg-transparent prev" onclick="showPrev('slider1')"> 
+                        ⇦
+                    </button>
+                    <button class="position-absolute top-50 end-0 border-0 bg-transparent next" onclick="showNext('slider1')"> 
+                        ⇨ 
+                    </button> 
+                </div>
+                <div class="d-flex flex-row justify-content-end position-absolute bottom-0 w-100 px-2">
+                    <div class="project-navigators" onclick="scrollToSection('project2')">Next : Contacts App ⬇ </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="projects position-relative" id="project2">
+                <div class="text-center position-absolute top-0 w-100 pt-2">
+                    <h3>CRUD Contacts App</h3>
+                </div>
+                <div class="project-description">
+                    
+                    <p>
+                        The application built using HTML, CSS, JavaScript, React, Firebase<br> allows users to perform basic operations on their contacts, such as 
+                        <ul>
+                            <li>Adding new contacts</li>
+                            <li>Viewing existing contacts</li>
+                            <li>Updating and deleting contacts</li>
+                            <li>Search functionality to quickly find specific contacts matching either name or contact details i.e. email in this case</li>
+                            <li>All data is stored and updated in Google Firebase database</li>
+                        </ul>
+                </div>
+                <div class="position-relative">
+                    <div class="slider-container">
+                        <div id="slider3">
+                            <div class="slides"><img class="project-images" src="./assets/images/project-images/contacts/img1.png" alt="Image 1"></div>
+                            <div class="slides"><img class="project-images" src="./assets/images/project-images/contacts/img2.png" alt="Image 2"></div>
+                            <div class="slides"><img class="project-images" src="./assets/images/project-images/contacts/img3.png" alt="Image 3"></div>
+                            <div class="slides"><img class="project-images" src="./assets/images/project-images/contacts/img4.png" alt="Image 4"></div>
+                        </div>          
+                    </div>
+                    <button class="position-absolute top-50 start-0 border-0 bg-transparent prev" onclick="showPrev('slider3')"> 
+                        ⇦ 
+                    </button>
+                    <button class="position-absolute top-50 end-0 border-0 bg-transparent next"  onclick="showNext('slider3')"> 
+                        ⇨ 
+                    </button>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between position-absolute bottom-0 w-100 px-2">
+                    <div class="project-navigators" onclick="scrollToSection('project1')"> ⬆ Previous : Ecommerce</div>
+                    <div class="project-navigators" onclick="scrollToSection('project3')">Next : Calculator App ⬇ </div>
+                    
+                </div>
+            </div>
+            <hr>
+
+            <div class="projects position-relative" id="project3">
+                <div class="text-center position-absolute top-0 w-100 pt-2">
+                    <h3>Calculator</h3>
+                </div>
+                <div class="project-description">
+                    
+                    <p>
+                        The Interactive JavaScript Calculator is a web-based application designed to provide users with a simple 
+                        and intuitive tool for performing basic arithmetic calculations. <br>
+                        <ul>
+                        <li>Built entirely using HTML, CSS, and JavaScript </li>
+                        <li>Users to perform addition, subtraction, multiplication, and division with simplicity</li>
+                        <li>Scientific version can perform most widely used scientific operations</li>
+                        </ul>
+                    </p>
+                </div>
+                <!-- Project images-->
+                <div class="position-relative">
+                    <div class="slider-container">
+                        <div id="slider2">
+                            <div class="slides"><img class="project-images" src="./assets/images/project-images/calculator/img1.png" alt="Image 1"></div>
+                            <div class="slides"><img class="project-images" src="./assets/images/project-images/calculator/img2.png" alt="Image 2"></div>
+                        </div>          
+                    </div>
+                    <button class="position-absolute top-50 start-0 border-0 bg-transparent prev" onclick="showPrev('slider2')"> 
+                        ⇦ 
+                    </button>
+                    <button class="position-absolute top-50 end-0 border-0 bg-transparent next"  onclick="showNext('slider2')"> 
+                        ⇨ 
+                    </button>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between position-absolute bottom-0 w-100 px-2">
+                    <div class="project-navigators" onclick="scrollToSection('project2')"> ⬆ Previous : Contacts</div>
+                    <div class="project-navigators" onclick="scrollToSection('section1')">Back to top </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        
+    </div>
+    <script src="./scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
